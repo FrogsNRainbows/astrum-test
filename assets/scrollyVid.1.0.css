@@ -1,0 +1,11 @@
+@media screen and (min-width:1334px){
+.scrollyVid>div {transition:all 300ms ease-in-out;}
+.scrollyVid.scrolled:before{content:"";padding-top:56.25%;background-color:#DDD;display:block;}
+.scrollyVid.scrolled>div{position:fixed;bottom:10px;right:10px;height:180px; width:320px;z-index:6000;}
+}
+.scrollyVid>div::before {content: "";display: block;padding-top: 56.25%;width: 100%;position: relative;}
+iframe.video_player_iframe{position:absolute;top:0; left:0; width:100%; height:100%;background-color:#ffffff00;}
+.scrollyVid {position:relative; margin:1em 0}
+@media screen and (orientation:portrait){
+    /* .scrollyVid>div::before {padding-top: 100%;}     */
+}
